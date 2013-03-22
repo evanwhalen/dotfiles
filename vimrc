@@ -148,7 +148,7 @@ map <Leader>l :call RunLastSpec()<CR>
 
 function! RunCurrentSpecFile()
   if InSpecFile()
-    let l:command = "s " . @% . " -f documentation"
+    let l:command = "s " . @%
     call SetLastSpecCommand(l:command)
     call RunSpecs(l:command)
   endif
@@ -156,7 +156,7 @@ endfunction
 
 function! RunNearestSpec()
   if InSpecFile()
-    let l:command = "s " . @% . " -l " . line(".") . " -f documentation"
+    let l:command = "s " . @% . " -l " . line(".")
     call SetLastSpecCommand(l:command)
     call RunSpecs(l:command)
   endif
