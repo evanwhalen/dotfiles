@@ -43,6 +43,7 @@ Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 
@@ -81,7 +82,9 @@ if executable("ag")
 endif
 
 " Color scheme
-colorscheme github
+syntax enable
+set background=dark
+colorscheme solarized
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
