@@ -46,6 +46,7 @@ Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'rking/ag.vim'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
 
